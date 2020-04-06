@@ -10,6 +10,7 @@ const Message = ({ message: { user, text }, name }) => {
   const trimmedName = name.trim().toLowerCase();
 
   if (user === trimmedName) {
+    // conditionally renders which color and side the message appears on depending if the message is yours or not
     isSentByCurrentUser = true;
   }
 
